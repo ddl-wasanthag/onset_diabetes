@@ -1,0 +1,12 @@
+{
+  "data": {
+    "timesPregnant": 0,
+    "glucose": 85,
+    "bp": 66,
+    "skinFold": 29,
+    "insulin": 0,
+    "BMI": 26.6,
+    "pedigree": 0.351,
+    "age": 31
+  }
+}
