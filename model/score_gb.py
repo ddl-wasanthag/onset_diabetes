@@ -6,7 +6,7 @@ import sys
 import numpy as np
 
 def score(timesPregnant, glucose, bp, skinFold, insulin, BMI, pedigree, age):
-    model = pickle.load(open("model/diabetes_gb.sav", 'rb'))
+    model = pickle.load(open("/mnt/artifacts/diabetes_gb.sav", 'rb'))
     result = model.predict_proba([[timesPregnant, glucose, bp, skinFold, insulin, BMI, pedigree, age]]) 
     return result.tolist()
     

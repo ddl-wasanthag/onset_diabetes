@@ -62,7 +62,7 @@ def main(args):
     
     args = parser.parse_args()
     
-    X_train, X_test, y_train, y_test = load_data("/mnt/data/pima-indians-diabetes.csv")
+    X_train, X_test, y_train, y_test = load_data("/mnt/data/onset_diabetes_git/pima-indians-diabetes.csv")
     
     model = fit_model(X_train, y_train, args.lr, args.depth, args.ft)
     
@@ -76,7 +76,7 @@ def main(args):
       f.write(json.dumps({"F1 score": f1, "Accuracy": acc}))
 
     print("Saving model...")
-    pickle.dump(model, open("/mnt/model/diabetes_gb.sav", 'wb'))
+    pickle.dump(model, open("/mnt/artifacts/diabetes_gb.sav", 'wb'))
     print("saved.")
     
 if __name__=='__main__':
